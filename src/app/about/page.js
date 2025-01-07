@@ -4,8 +4,8 @@ import Link from 'next/link';
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen w-full bg-gray-50 px-6 py-12 text-gray-800">
-      <section className="mx-auto max-w-4xl bg-white p-6 shadow-md md:p-10">
+    <main className="w-full min-h-screen px-6 py-12 text-gray-800 bg-gray-50">
+      <section className="max-w-4xl p-6 mx-auto bg-white shadow-md md:p-10">
         <div className="mb-6 text-center">
           <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl">
             About Me
@@ -17,15 +17,15 @@ export default function AboutPage() {
         </div>
 
         {/* PROFILE SECTION */}
-        <div className="mb-8 flex flex-col items-center gap-6 md:flex-row md:items-start">
+        <div className="flex flex-col items-center gap-6 mb-8 md:flex-row md:items-start">
  
-          <div className="mb-4 flex-shrink-0 md:mb-0">
+          <div className="flex-shrink-0 mb-4 md:mb-0">
             <Image
               src="/images/quentin.jpg"
               alt="Profile Picture of Quentin Guillaume"
               width={160}
               height={160}
-              className="rounded-full object-cover"
+              className="object-cover rounded-full"
             />
           </div>
           <div className="flex-1 space-y-4 text-gray-700">
@@ -66,11 +66,11 @@ export default function AboutPage() {
         </div>
 
         {/* SKILLS SECTION */}
-        <div className="mb-8 rounded-lg bg-gray-100 p-4 md:p-6">
+        <div className="p-4 mb-8 bg-gray-100 rounded-lg md:p-6">
           <h2 className="mb-3 text-xl font-semibold text-gray-900">
             Core Skills & Expertise
           </h2>
-          <ul className="list-inside list-disc space-y-2 text-gray-700">
+          <ul className="space-y-2 text-gray-700 list-disc list-inside">
             <li>
               **Front-End Development:** React, Next.js, Tailwind CSS, Responsive UI
             </li>
@@ -108,16 +108,17 @@ export default function AboutPage() {
         <div className="mt-6 text-center">
           <Link
             href="/projects"
-            className="mr-3 inline-block rounded bg-blue-600 px-6 py-2 text-white transition-colors hover:bg-blue-700"
+            className="inline-block px-6 py-2 mr-3 text-white transition-colors bg-blue-600 rounded hover:bg-blue-700"
           >
             View My Projects
           </Link>
-          <Link
-            href="/contact"
-            className="inline-block rounded border-2 border-blue-600 px-6 py-2 font-semibold text-blue-600 transition-colors hover:bg-blue-600 hover:text-white"
-          >
-            Get in Touch
-          </Link>
+          <a
+  href="mailto:contact@quentinguillaume.com"
+  className="inline-block px-6 py-2 font-semibold text-blue-600 transition-colors border-2 border-blue-600 rounded hover:bg-blue-600 hover:text-white"
+>
+  Get In Touch
+</a>
+
         </div>
       </section>
     </main>

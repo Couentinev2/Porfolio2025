@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         {/* NAVBAR */}
-        <header className="flex justify-between items-center bg-white px-6 py-4 shadow">
+        <header className="flex items-center justify-between px-6 py-4 bg-white shadow">
         <div>
             <Image
               src="/images/couentine.png" 
@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
             <a href="/" className="hover:text-blue-600">Home</a>
             <a href="/projects" className="hover:text-blue-600">Projects</a>
             <a href="/about" className="hover:text-blue-600">About</a>
-            <a href="/contact" className="hover:text-blue-600">Contact</a>
+        {/*    <a href="/contact" className="hover:text-blue-600">Contact</a>*/}
             <a
               href="https://www.youtube.com/@kimchicroissant"
               className="hover:text-blue-600"
@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
         {children}
 
         {/* FOOTER */}
-        <footer className="bg-gray-100 py-8 text-center">
+        <footer className="py-8 text-center bg-gray-100">
           <p className="text-gray-600">
             © {new Date().getFullYear()} Quentin Guillaume. All rights reserved.
           </p>
