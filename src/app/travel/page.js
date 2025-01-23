@@ -6,7 +6,7 @@ export default function TravelPlanner() {
   return (
     <div className="min-h-screen bg-gray-100">
       <div className="container px-4 py-8 mx-auto">
-        <h1 className="text-4xl font-bold text-center">Travel Planner</h1>
+        <h1 className="text-4xl font-bold text-center text-gray-800">Travel Planner</h1>
         <TravelPlannerForm />
       </div>
     </div>
