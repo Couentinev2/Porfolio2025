@@ -2,6 +2,8 @@
 import './globals.css';
 import { Inter } from 'next/font/google';
 import Image from 'next/image';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
 
 
 const inter = Inter({ subsets: ['latin'] });
